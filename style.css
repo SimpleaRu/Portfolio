@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'SF UI Text';
+    src: url('fonts/SFUIText-Light.eot');
+    src: local('SF UI Text Light'), local('SFUIText-Light'), url('fonts/SFUIText-Light.eot?#iefix') format('embedded-opentype'), url('fonts/SFUIText-Light.woff') format('woff'), url('fonts/SFUIText-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    font-family: SF UI Text, Arial, Helvetica, sans-serif;
+}
+
+.header {
+    margin-top: 200px;
+    margin-bottom: 500px;
+}
+
+.avatar {
+    text-align: center;
+}
+
+.avatar__img {
+    margin: 0 0 20px 0;
+}
+
+.avatar__represent-text_line-height {
+    font-family: SF UI Text, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+/*  Секция проектов портфолио  */
+
+.main {
+ 
+}
+
+.projects-section {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project {
+    width: 300px;
+}
+.project__img {
+    height: 312px;
+}
