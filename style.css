@@ -28,6 +28,49 @@ body {
     font-size: 20px;
     margin: 0 0 10px 0;
 }
+.animation {
+    text-align: center;
+}
+.animation__stick {
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    background-color: black;
+    margin: 0;
+}
+
+.animation__stick-first {
+    transform-origin: right;
+    animation-name: firstStick;
+    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.animation__stick-last {
+    transform-origin: left;
+    animation-name: lastStick;
+    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes firstStick {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-120deg);
+    }
+}
+@keyframes lastStick {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(120deg);
+    }
+}
+
 
 /*  Секция проектов портфолио  */
 
@@ -48,4 +91,8 @@ body {
 }
 .project__img {
     height: 312px;
+    margin-bottom: 15px;
+}
+.project__description_line-height {
+    margin-bottom: 10px;
 }
