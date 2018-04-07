@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'SF UI Text';
     src: url('fonts/SFUIText-Light.eot');
@@ -115,4 +116,15 @@ body {
 
 .project__img:hover {
     transform: scale(1.1);
+}
+
+@media screen and (max-width: 600px) {
+    .projects-section {
+        display: block;
+        text-align: center;
+    }
+    .project {
+        margin: 0 auto 20px;
+    }
+
 }
