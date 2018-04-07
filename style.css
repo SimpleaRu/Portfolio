@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'SF UI Text';
     src: url('fonts/SFUIText-Light.eot');
@@ -86,7 +85,7 @@ body {
 
 .projects-section {
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto 30px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -118,6 +117,20 @@ body {
     transform: scale(1.1);
 }
 
+/* Style for contacts */
+
+.contacts {
+    text-align: center;
+}
+
+.contacts__item {
+    margin: 0 auto 10px;
+}
+
+.contacts__link {
+    text-decoration: none;
+}
+
 @media screen and (max-width: 600px) {
     .projects-section {
         display: block;
@@ -129,5 +142,4 @@ body {
     .project__description_first-paragraph {
         min-height: 0;
     }
-
 }
