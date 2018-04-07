@@ -124,7 +124,10 @@ body {
         text-align: center;
     }
     .project {
-        margin: 0 auto 20px;
+        margin: 0 auto 30px;
+    }
+    .project__description_first-paragraph {
+        min-height: 0;
     }
 
 }
