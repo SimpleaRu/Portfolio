@@ -85,10 +85,12 @@ body {
 
 .projects-section {
     max-width: 1200px;
-    margin: 0 auto 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* margin: 0 auto 30px;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
 }
 
 .project {
@@ -131,15 +133,14 @@ body {
     text-decoration: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     .projects-section {
-        display: block;
-        text-align: center;
+        grid-template-columns: 1fr;
     }
-    .project {
+    /* .project {
         margin: 0 auto 30px;
     }
     .project__description_first-paragraph {
         min-height: 0;
-    }
+    } */
 }
