@@ -10,6 +10,9 @@
 
 <body>
   <header class="header">
+    <h3 class="grid-support">
+
+    </h3>
     <section class="avatar">
       <div class="avatar__img">
         <img src="img/circleAvatar 300.png" alt="avatar" width="200" height="200">
@@ -27,12 +30,53 @@
       </div>
     </section>
     <div class="animation">
-      <div class="animation__stick animation__stick-first"></div><div class="animation__stick animation__stick-center"></div><div class="animation__stick animation__stick-last"></div>
+      <div class="animation__stick animation__stick-first"></div>
+      <div class="animation__stick animation__stick-center"></div>
+      <div class="animation__stick animation__stick-last"></div>
     </div>
   </header>
 
   <main class="main">
     <section class="projects-section">
+      <h3 class="projects-title">
+        Проекты в production
+      </h3>
+
+      <div class="project">
+        <div class="project__img-container">
+          <a href="https://sberbankvmeste.ru/welcome">
+            <img src="img/sberbank-vmeste.jpg" alt="sberbank-vmeste" class="project__img">
+          </a>
+        </div>
+        <div class="project__description">
+          <p class="project__description_line-height project__description_first-paragraph">
+            Сайт посвященный благотворительности.
+          </p>
+          <p class="project__description_line-height">
+            <b>Использованы:</b> Typescript, ReactJS, Apollo, GraphQL.
+          </p>
+        </div>
+      </div>
+
+      <div class="project project-sberkids">
+        <div class="project__img-container">
+          <a href="https://play.google.com/store/apps/details?id=ru.sberbank.sberkids">
+            <img src="img/sberkids.PNG" alt="sberbank-vmeste" class="project__img">
+          </a>
+        </div>
+        <div class="project__description">
+          <p class="project__description_line-height project__description_first-paragraph">
+            Банк для детей и родителей. Мобильная разработка на React + Cordova.
+          </p>
+          <p class="project__description_line-height">
+            <b>Использованы:</b> Typescript, ReactJS, Apollo, GraphQL, Cordova, Redux, Apollo.
+          </p>
+        </div>
+      </div>
+
+      <h3 class="projects-title">
+        Личные проекты
+      </h3>
 
       <div class="project">
         <div class="project__img-container">
@@ -42,7 +86,7 @@
         </div>
         <div class="project__description">
           <p class="project__description_line-height project__description_first-paragraph">
-            Проект создан для обмена опытом и выбора вин разных 
+            Проект создан для обмена опытом и выбора вин разных
             сортов и категорий.
           </p>
           <p class="project__description_line-height">
@@ -83,23 +127,23 @@
           </p>
         </div>
       </div>
+
     </section>
 
-    <section class="contacts" >
-      <p class="contacts__item" >
-        <a  class="contacts__link" href="https://github.com/SimpleaRu">gitHub </a>
+    <section class="contacts">
+      <p class="contacts__item">
+        <a class="contacts__link" href="https://github.com/SimpleaRu">gitHub </a>
       </p>
-      <p class="contacts__item" >
+      <p class="contacts__item">
         Telegram - SimpleA
       </p>
-      <p class="contacts__item" >
+      <p class="contacts__item">
         mail - info@simplea.ru
       </p>
-      
-
     </section>
-    
+
   </main>
+  <script src="script.js" async></script>
 </body>
 
 </html>
