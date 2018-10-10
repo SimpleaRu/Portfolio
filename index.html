@@ -5,12 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
-  <!-- <script src="script.js"></script> -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header class="header">
+    <h3 class="grid-support">
+
+    </h3>
     <section class="avatar">
       <div class="avatar__img">
         <img src="img/circleAvatar 300.png" alt="avatar" width="200" height="200">
@@ -42,7 +44,7 @@
 
       <div class="project">
         <div class="project__img-container">
-          <a href="http://simplea.ru/wineCards/">
+          <a href="https://sberbankvmeste.ru/welcome">
             <img src="img/sberbank-vmeste.jpg" alt="sberbank-vmeste" class="project__img">
           </a>
         </div>
@@ -51,7 +53,23 @@
             Сайт посвященный благотворительности.
           </p>
           <p class="project__description_line-height">
-            <b>Использованы:</b> Typescript, React js, Apollo, GraphQL.
+            <b>Использованы:</b> Typescript, ReactJS, Apollo, GraphQL.
+          </p>
+        </div>
+      </div>
+
+      <div class="project project-sberkids">
+        <div class="project__img-container">
+          <a href="https://play.google.com/store/apps/details?id=ru.sberbank.sberkids">
+            <img src="img/sberkids.PNG" alt="sberbank-vmeste" class="project__img">
+          </a>
+        </div>
+        <div class="project__description">
+          <p class="project__description_line-height project__description_first-paragraph">
+            Банк для детей и родителей. Мобильная разработка на React + Cordova.
+          </p>
+          <p class="project__description_line-height">
+            <b>Использованы:</b> Typescript, ReactJS, Apollo, GraphQL, Cordova, Redux, Apollo.
           </p>
         </div>
       </div>
@@ -125,6 +143,7 @@
     </section>
 
   </main>
+  <script src="script.js" async></script>
 </body>
 
 </html>

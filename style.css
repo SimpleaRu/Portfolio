@@ -1,158 +1,176 @@
 @font-face {
-    font-family: 'SF UI Text';
-    src: url('fonts/SFUIText-Light.eot');
-    src: local('SF UI Text Light'), local('SFUIText-Light'), url('fonts/SFUIText-Light.eot?#iefix') format('embedded-opentype'), url('fonts/SFUIText-Light.woff') format('woff'), url('fonts/SFUIText-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
+  font-family: "SF UI Text";
+  src: url("fonts/SFUIText-Light.eot");
+  src: local("SF UI Text Light"), local("SFUIText-Light"),
+    url("fonts/SFUIText-Light.eot?#iefix") format("embedded-opentype"),
+    url("fonts/SFUIText-Light.woff") format("woff"),
+    url("fonts/SFUIText-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
 }
 
 body {
-    font-family: SF UI Text, Arial, Helvetica, sans-serif;
+  font-family: SF UI Text, Arial, Helvetica, sans-serif;
 }
 
 .header {
-    margin-top: 170px;
-    margin-bottom: 200px;
+  margin-top: 170px;
+  margin-bottom: 200px;
 }
 
 .avatar {
-    text-align: center;
-    margin-bottom: 50px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .avatar__img {
-    margin: 0 0 20px 0;
+  margin: 0 0 20px 0;
 }
 
 .avatar__represent-text_line-height {
-    font-family: SF UI Text, Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    margin: 0 0 10px 0;
+  font-family: SF UI Text, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin: 0 0 10px 0;
 }
 
 .animation {
-    text-align: center;
-    padding-bottom: 50px;
+  text-align: center;
+  padding-bottom: 50px;
 }
 
 .animation__stick {
-    display: inline-block;
-    width: 50px;
-    height: 1px;
-    background-color: rgb(37, 37, 37);
-    margin: 0;
+  display: inline-block;
+  width: 50px;
+  height: 1px;
+  background-color: rgb(37, 37, 37);
+  margin: 0;
 }
 
 .animation__stick-first {
-    transform-origin: right;
-    animation-name: firstStick;
-    animation-delay: 1.5s;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+  transform-origin: right;
+  animation-name: firstStick;
+  animation-delay: 1.5s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 .animation__stick-last {
-    transform-origin: left;
-    animation-name: lastStick;
-    animation-delay: 1.5s;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+  transform-origin: left;
+  animation-name: lastStick;
+  animation-delay: 1.5s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes firstStick {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(-120deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-120deg);
+  }
 }
 
 @keyframes lastStick {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(120deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(120deg);
+  }
+}
+
+.grid-support {
+  text-align: center;
+  color: red;
 }
 
 /*  Секция проектов портфолио  */
 
 .main {
-    min-height: 600px;
+  min-height: 600px;
 }
 
 .projects-section {
-    max-width: 1200px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-row-gap: 5vh;
-    /* margin: 0 auto 30px;
-    display: flex;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 5vh;
+  margin: 0 auto 30px;
+  /* display: flex;
     justify-content: space-around;
-    flex-wrap: wrap; */
+    flex-wrap: wrap;  */
 }
 
 .project {
-    width: 300px;
+  width: 300px;
+  margin: 0 auto;
 }
 
-.projects-title { 
-    grid-column-start: 1;
-    grid-column-end: 4;
-    text-align: center;
- }
+.projects-title {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  text-align: center;
+}
 
 .project__img-container {
-    height: 312px;
-    margin-bottom: 15px;
+  height: 312px;
+  margin-bottom: 15px;
 }
 
 .project__description_line-height {
-    margin: 0 0 10px 0;
+  margin: 0 0 10px 0;
 }
 
 .project__description_first-paragraph {
-    min-height: 60px;
+  min-height: 60px;
 }
 
 .project__img {
-    -webkit-transition: 0.5s ease;
-    transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .project__img:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
+.project-sberkids {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
 /* Style for contacts */
 
 .contacts {
-    text-align: center;
+  text-align: center;
 }
 
 .contacts__item {
-    margin: 0 auto 10px;
+  margin: 0 auto 10px;
 }
 
 .contacts__link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 950px) {
-    .projects-section {
-        grid-template-columns: 1fr;
-    }
-     .project {
-      text-align: center;
-      width: 100%;
-    }
-    .projects-title {
-        grid-column-start: 1;
-        grid-column-end: 2;
-    }
-    .project__description_first-paragraph {
-        min-height: 0;
-    }  
+  .projects-section {
+    grid-template-columns: 1fr;
+  }
+  .project {
+    text-align: center;
+    width: 100%;
+  }
+  .projects-title {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .project-sberkids {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .project__description_first-paragraph {
+    min-height: 0;
+  }
 }
