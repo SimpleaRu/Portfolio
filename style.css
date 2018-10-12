@@ -36,10 +36,11 @@ body {
 .animation {
   text-align: center;
   padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
 }
 
 .animation__stick {
-  display: inline-block;
   width: 50px;
   height: 1px;
   background-color: rgb(37, 37, 37);
