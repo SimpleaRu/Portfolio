@@ -103,6 +103,7 @@ body {
 .project {
   width: 300px;
   margin: 0 auto;
+  margin-bottom: 3vw;
 }
 
 .projects-title {
