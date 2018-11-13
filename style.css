@@ -96,8 +96,8 @@ body {
   max-width: 1200px;
   margin-top: 0;
   margin-bottom: 2vh;
-  margin-right: 1vh;
-  margin-left: 1vh;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .project {
@@ -141,7 +141,8 @@ body {
   grid-column-end: 4;
 }
 
-.production-projects, .pets-projects {
+.production-projects,
+.pets-projects {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 5vh;
@@ -176,7 +177,8 @@ body {
     margin-right: 1vw;
     margin-left: 1vw;
   }
-  .production-projects, .pets-projects {
+  .production-projects,
+  .pets-projects {
     grid-template-columns: 1fr;
   }
   .project {
