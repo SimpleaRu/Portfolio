@@ -1,3 +1,3 @@
 Страничка для портфолио находится в разработке.
 
-Но посмотреть промежуточный вариант можно <a href="https://simplearu.github.io/Portfolio/" > тут</a>
+Но посмотреть промежуточный вариант можно <a href="https://akashuba.github.io/Portfolio/" > тут</a>
